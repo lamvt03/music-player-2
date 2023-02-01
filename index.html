@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300;400;500&display=swap'); </style>
+</head>
+<body>
+    <div id="music-player">
+        <div id="dashboard">
+            <div>
+                <span>Now Playing</span>
+            </div>
+            <h2>Sting 57th & 9th</h2>
+            <span>Hero</span>
+            <div id="cd-thum"></div>
+
+            <input id="progress-bar" type="range" value="0" min="0" max="100" step="1"  >
+            <div id="time-bar">
+                <span id="current-time"></span>
+                <span id="duration"></span>
+            </div>
+            <div id="control-btns">
+                <div class="btn repeat-btn">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="btn precious-btn">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn play-toggle-btn">
+                    <i class="fa-solid fa-play  play-btn"></i>
+                    <i class="fa-solid fa-pause  pause-btn"></i>
+                </div>
+                <div class="btn next-btn">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="btn random-btn">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <audio id="audio"></audio>
+        </div>
+
+        <div id="playlist">
+            
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
